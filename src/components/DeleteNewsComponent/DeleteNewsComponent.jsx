@@ -80,7 +80,7 @@ const DeleteNewsComponent = () => {
     event.preventDefault()
 
     axios
-      .patch(`https://newsportal-app-backend.vercel.app/api/v1/news/`, {data : newsInfo})
+      .delete(`https://newsportal-app-backend.vercel.app/api/v1/news`, {data : newsInfo})
       .then(response => {
         alert(`${newsInfo.title} is deleted successfully`)
         window.location.href = '/'

@@ -80,7 +80,7 @@ const EditNewsComponent = () => {
     event.preventDefault()
 
     axios
-      .patch(`https://newsportal-app-backend.vercel.app/api/v1/news/`, newsInfo)
+      .patch(`https://newsportal-app-backend.vercel.app/api/v1/news`, newsInfo)
       .then(response => {
         alert(`${newsInfo.title} is updated successfully`)
         window.location.href = '/'
