@@ -56,7 +56,7 @@ const EditNewsComponent = () => {
 
   const titleValidator = () => {
     axios
-      .post(`http://localhost:3500/api/v1/news/validate`, {title : newsInfo.title})
+      .post(`https://newsportal-app-backend.vercel.app/api/v1/news/validate`, {title : newsInfo.title})
       .then(response => {
         setNewsInfo({
           title : response.data.title,

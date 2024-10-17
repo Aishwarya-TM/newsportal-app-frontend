@@ -8,7 +8,7 @@ const GetAllNewsComponent = () => {
 
   useEffect(() => {
     axios
-    .get('http://localhost:3500/api/v1/news')
+    .get('https://newsportal-app-backend.vercel.app/api/v1/news')
     .then(response => {
       setNews(response.data)
     })

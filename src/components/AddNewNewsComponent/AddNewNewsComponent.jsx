@@ -60,7 +60,7 @@ const AddNewNewsComponent = () => {
     event.preventDefault()
     
     axios
-      .post(`http://localhost:3500/api/v1/news`, newsInfo)
+      .post(`https://newsportal-app-backend.vercel.app/api/v1/news`, newsInfo)
       .then(response => {
         alert(`${response.data.title} is added successfully`)
         window.location.href = '/'
